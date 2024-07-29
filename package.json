@@ -1,0 +1,25 @@
+{
+    "name": "beer-rating(node)",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start-db": "docker build -t test_db . && docker run -p 27017:27017 -d test_db",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.19.2",
+        "joi": "^17.13.3",
+        "mongodb": "^6.8.0",
+        "mongoose": "^8.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
